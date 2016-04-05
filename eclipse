@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run -ti \
+           -e DISPLAY=$DISPLAY \
+           -v /tmp/.X11-unix:/tmp/.X11-unix \
+           -v `pwd`:/workspace \
+           -v "$(pwd)/dropins":/opt/eclipse/dropins \
+           vintec/eclipse_grails3:mars
+

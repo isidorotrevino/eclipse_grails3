@@ -1,0 +1,11 @@
+jar:https://repo.gradle.org/gradle/tooling-libs-releases-local/com/gradleware/tooling/p2-repository/0.11.3/p2-repository-0.11.3.zip\!/
+jar:file:/tmp/files/springsource-tool-suite-3.6.4.RELEASE-e4.5-updatesite.zip\!/
+http://download.eclipse.org/linuxtools/update-docker
+http://download.eclipse.org/technology/epp/packages/mars/
+http://download.eclipse.org/releases/mars
+http://download.eclipse.org/releases/mars/201602261000
+http://download.eclipse.org/eclipse/updates/4.5
+http://dist.springsource.com/release/TOOLS/update/e4.5/
+http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/
+http://download.eclipse.org/linuxtools/updates-docker-nightly/
+
