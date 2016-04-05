@@ -1,14 +1,18 @@
-# eclipse_grails3
+# Eclipse ~ Grails 3 - Docker Container
+
+
 
 Eclipse Mars.2 in a Docker container with required plugins for Grails 3 development
 
 * It is based on the work by fghrem, pay him a visit in his [docker-eclipse](https://github.com/fgrehm/docker-eclipse/) repository.
 * I built it based on some suggestions from Ted Vinke's [Java Code Geeks article](https://www.javacodegeeks.com/2015/10/eclipse-mars-grails-3-1-with-gradle-groovy-and-gsp-support.html)
-* In a nutshell has the following plugins installed:
-** Spring IDE (for YML and Spring boot support)
-** Grails IDE (for GSP editing and quicksearch)
-** Gradle support
-** Docker support (if you're running the IDE from a docker container, why not run other containers from it?)
+
+In a nutshell has the following plugins installed:
+
+* Spring IDE (for YML and Spring boot support)
+* Grails IDE (for GSP editing and quicksearch)
+* Gradle support
+* Docker support (if you're running the IDE from a docker container, why not run other containers from it?)
 
 The following instructions work were copied from fghrem's repository, as they work in the same way
 
