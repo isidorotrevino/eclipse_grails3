@@ -50,11 +50,12 @@ For example:
 
 ```sh
 mkdir -p .eclipse-docker
-docker run -ti --rm \
+docker run -ti \
+           --name eclipse_grails3 \
            -e DISPLAY=$DISPLAY \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
-           -v `pwd`/.eclipse-docker:/home/developer \
-           -v `pwd`:/workspace \
+           -v `pwd`:/home/developer/workspace \
+           -v `echo $HOME`/.gradle:/home/developer/.gradle \
            vintec/eclipse_grails3:mars
 ```
 
