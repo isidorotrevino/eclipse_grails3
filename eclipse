@@ -2,8 +2,17 @@
 
 docker run -ti \
            -e DISPLAY=$DISPLAY \
+#            --add-host DMXNT50045MX:192.168.0.158 \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
-           -v `pwd`:/workspace \
-           -v "$(pwd)/dropins":/opt/eclipse/dropins \
-           vintec/eclipse_grails3:mars
+           -v /opt/workspaces/projects:/projects:rw \
+           -v /opt/workspaces/grails3:/home/developer/workspace:rw \
+           -v /opt/jdks:/jdks:rw \
+           -v /opt/tmp:/host_tmp:rw \
+		   -v /opt/workspaces/support_libs:/support:rw \
+		   -v `echo $HOME`/.docker:/home/developer/.docker \
+           -v `echo $HOME`/.gradle:/home/developer/.gradle \
+           -v `echo $HOME`/.m2:/home/developer/.m2 \
+           --name eclipse_grails3 \
+           vintec/eclipse_grails3:mars_lombok
+
 
